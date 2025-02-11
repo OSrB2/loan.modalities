@@ -12,7 +12,7 @@
 	<artifactId>loan.modalities</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>loan.modalities</name>
-	<description>service that determines which loan modalities a person has access to. The loan modalities available to a person are based on some specific variables.</description>
+	<description>A service that determines which loan options a person has access to. The loan options available to a person are based on their salary, age, and location.</description>
 	<url/>
 	<licenses>
 		<license/>

@@ -46,21 +46,10 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>6.5.2.Final</version>
 		</dependency>
-
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-database-postgresql</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -115,29 +104,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<!-- Configuração para conexão do flyway -->
-			<plugin>
-				<groupId>org.flywaydb</groupId>
-				<artifactId>flyway-maven-plugin</artifactId>
-				<version>10.20.1</version>
-				<configuration>
-					<url>jdbc:postgresql://localhost:5432/loanModalities</url>
-					<user>docker</user>
-					<password>docker</password>
-					<baselineOnMigrate>true</baselineOnMigrate>
-					<locations>
-						<location>classpath:db/migration</location>
-					</locations>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.postgresql</groupId>
-						<artifactId>postgresql</artifactId>
-						<version>${postgresql.version}</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-
 			<!-- Adicionando maven-resources-plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

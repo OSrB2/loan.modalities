@@ -1,4 +1,4 @@
-package entity;
+package com.oliveira.pedro.loan.modalities.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
